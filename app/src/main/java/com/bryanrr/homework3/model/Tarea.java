@@ -10,15 +10,25 @@ public class Tarea {
     private String descripcion;
     private Date creadoEn;
     private Boolean completado;
+    private Date hora;
 
-    public Tarea(String descripcion) {
+    public Tarea(String descripcion, Date creadoEn, Date hora) {
 
         this.id = new Random().nextInt();
         this.descripcion = descripcion;
         this.completado = false;
-        this.creadoEn = new Date();
+        this.creadoEn = creadoEn;
+        this.hora = hora;
 
 
+    }
+
+    public Date getHora() {
+        return hora;
+    }
+
+    public void setHora(Date hora) {
+        this.hora = hora;
     }
 
     public Integer getId() {

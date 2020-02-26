@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.bryanrr.homework3.Service.DeseosService;
@@ -49,5 +50,13 @@ public class MainActivity extends AppCompatActivity {
         Intent intent;
         intent = new Intent(this, RegistrarTareaActivity.class);
         this.startActivity(intent);
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+
     }
 }

@@ -4,22 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
+
     android:orientation="vertical"
     tools:context=".RegistrarTareaActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
 
+        >
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tb_main"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/ic_launcher_background"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlwaysCollapsed" />
+
+        </com.google.android.material.appbar.AppBarLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Descripción">
+            android:hint="Título"
+            android:layout_margin="10dp"
+            >
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txt_descripcion"
+                android:id="@+id/txt_titulo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text">
@@ -30,51 +49,37 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Fecha">
+            android:hint="Descripción"
+            android:layout_margin="10dp"
+            >
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txt_fecha"
+                android:id="@+id/txt_descripcion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="date">
+                android:inputType="text"
+
+                >
 
             </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
+
+
+        <Button
+            android:id="@+id/btn_add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Hora">
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Agregar"
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txt_hora"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="time">
+            >
 
-            </com.google.android.material.textfield.TextInputEditText>
-        </com.google.android.material.textfield.TextInputLayout>
+        </Button>
+
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_add"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Agregar"
-        android:layout_marginBottom="10dp"
-        >
 
-    </Button>
-
-    <Button
-        android:layout_below="@+id/btn_add"
-        android:id="@+id/btn_back"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Regresar">
-
-    </Button>
 </RelativeLayout>

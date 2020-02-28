@@ -25,17 +25,17 @@
                 android:id="@+id/tb_main"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@drawable/ic_launcher_background"
+                android:background="@drawable/kanban"
                 app:layout_collapseMode="pin"
                 app:layout_scrollFlags="scroll|enterAlwaysCollapsed" />
 
         </com.google.android.material.appbar.AppBarLayout>
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Título"
             android:layout_margin="10dp"
-            >
+            android:hint="Título">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txt_titulo"
@@ -49,9 +49,8 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Descripción"
             android:layout_margin="10dp"
-            >
+            android:hint="Descripción">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txt_descripcion"
@@ -65,16 +64,14 @@
         </com.google.android.material.textfield.TextInputLayout>
 
 
-
         <Button
             android:id="@+id/btn_add"
+            style="@style/BtnStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:text="Agregar"
-
-            >
+            android:text="Agregar">
 
         </Button>
 

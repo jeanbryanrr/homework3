@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
+        
     </style>
 
 
@@ -18,4 +19,10 @@
     <style name="CheckboxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
         <item name="buttonTint">#7CFFFFFF</item>
     </style>
+
+    <style name="BtnStyle" parent="@android:style/TextAppearance">
+      <item name="android:background">@color/secondaryLightColor</item>
+        <item name="android:textStyle">bold|normal</item>
+    </style>
+    
 </resources>

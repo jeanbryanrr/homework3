@@ -8,7 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
-        
+
     </style>
 
 
@@ -16,13 +16,42 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
     <style name="CheckboxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
         <item name="buttonTint">#7CFFFFFF</item>
     </style>
 
     <style name="BtnStyle" parent="@android:style/TextAppearance">
-      <item name="android:background">@color/secondaryLightColor</item>
+
         <item name="android:textStyle">bold|normal</item>
+        <item name="android:textColor">#ffff</item>
+
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+
     </style>
-    
+
+    <style name="TxtStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">
+            @color/colorPrimary
+        </item>
+    </style>
+
+    <style name="ItemTitulo" parent="@android:style/TextAppearance">
+
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">  @color/secondaryDarkColor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="ItemSub" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#B2B8C0</item>
+    </style>
+
+    <style name="ItemHora" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+
 </resources>

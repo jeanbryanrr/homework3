@@ -5,9 +5,18 @@
     android:layout_marginStart="10dp"
     android:layout_marginTop="10dp"
     android:orientation="horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/calendar"
+         android:paddingStart="0dp"
+        >
 
+    </ImageView>
     <TextView
         android:id="@+id/tv_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+
 </LinearLayout>

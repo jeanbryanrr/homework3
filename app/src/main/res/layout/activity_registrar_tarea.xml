@@ -35,13 +35,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:hint="Título">
+            android:hint="Título"
+  
+            >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txt_titulo"
+                style="@style/TxtStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text">
+                android:inputType="text"
+
+                >
 
             </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
@@ -54,6 +59,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txt_descripcion"
+                style="@style/TxtStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
@@ -69,9 +75,10 @@
             style="@style/BtnStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:text="Agregar">
+            android:background="@drawable/shape_button"
+            android:text="Agregar"
+
+            >
 
         </Button>
 
